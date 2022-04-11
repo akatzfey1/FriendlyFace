@@ -28,7 +28,7 @@ struct User: Codable, Identifiable {
     
     static var example: User {
         User(id: UUID(),
-             isActive: false,
+             isActive: true,
              name: "Alford Rodriguez",
              age: 21,
              company: "Imkan",
