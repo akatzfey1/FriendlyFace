@@ -13,6 +13,7 @@
 		92A294282803BAE1009BAC9F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92A294272803BAE1009BAC9F /* Preview Assets.xcassets */; };
 		92A294302803BB98009BAC9F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A2942F2803BB98009BAC9F /* User.swift */; };
 		92A294342803E955009BAC9F /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A294332803E955009BAC9F /* Network.swift */; };
+		92A2943628040148009BAC9F /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A2943528040148009BAC9F /* UserDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		92A294272803BAE1009BAC9F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		92A2942F2803BB98009BAC9F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		92A294332803E955009BAC9F /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		92A2943528040148009BAC9F /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserDetailView.swift; path = FriendlyFace/View/UserDetailView.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +58,9 @@
 			isa = PBXGroup;
 			children = (
 				92A2942E2803BB8C009BAC9F /* Data */,
+				92A2943728040157009BAC9F /* View */,
 				92A294202803BAE1009BAC9F /* FriendlyFaceApp.swift */,
 				92A294222803BAE1009BAC9F /* ContentView.swift */,
-				92A294332803E955009BAC9F /* Network.swift */,
 				92A294242803BAE1009BAC9F /* Assets.xcassets */,
 				92A294262803BAE1009BAC9F /* Preview Content */,
 			);
@@ -76,9 +78,18 @@
 		92A2942E2803BB8C009BAC9F /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				92A294332803E955009BAC9F /* Network.swift */,
 				92A2942F2803BB98009BAC9F /* User.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		92A2943728040157009BAC9F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				92A2943528040148009BAC9F /* UserDetailView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +165,7 @@
 				92A294232803BAE1009BAC9F /* ContentView.swift in Sources */,
 				92A294302803BB98009BAC9F /* User.swift in Sources */,
 				92A294342803E955009BAC9F /* Network.swift in Sources */,
+				92A2943628040148009BAC9F /* UserDetailView.swift in Sources */,
 				92A294212803BAE1009BAC9F /* FriendlyFaceApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
