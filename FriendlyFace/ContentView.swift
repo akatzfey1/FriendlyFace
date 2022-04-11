@@ -17,7 +17,7 @@ struct ContentView: View {
                 LazyVStack {
                     ForEach(network.users) { user in
                         NavigationLink {
-                            Text("Detail")
+                            UserDetailView(user: user)
                         } label: {
                             HStack {
                                 
