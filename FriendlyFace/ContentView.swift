@@ -8,14 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var network: Network
+
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        List(network.users, id: \.id) { user in
+            Text("\(user.name)")
+        }
+        .onAppear {
+            network.getUsers()
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(Network())
     }
 }
